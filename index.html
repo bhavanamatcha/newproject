@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahesh Babu Movie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="content">
+    <h1 class="title">Sarkaru Vaari Paata</h1>
+    <div class="card">
+      <img src="images/poster.jpg" alt="Movie Poster" class="poster" />
+      <div class="details">
+        <h2>Mahesh Babu</h2>
+        <p>A finance agent arrives in India to retrieve money from a woman who has defaulted on her loan. He gets caught up in a battle against powerful forces and discovers deeper corruption and injustice.</p>
+        
+        <div class="trailer-section">
+          <h3>Watch Trailer</h3>
+          <div class="trailer-thumbnail" onclick="openTrailer()">
+            <img src="images/trailer-thumbnail.jpg" alt="Trailer Thumbnail">
+            <div class="play-button">&#9658;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trailer Modal -->
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeTrailer()">&times;</span>
+      <div id="trailerContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
